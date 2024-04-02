@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.get('/', (request, response) => {
     console.log(request);
-    return response.status(234).send('Welcome To MERN Stack Tutorial');
+    response.json('Welcome To MERN Stack Tutorial');
 });
 
 app.use('/books', booksRoute);
